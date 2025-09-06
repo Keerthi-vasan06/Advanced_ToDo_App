@@ -1,1 +1,40 @@
 2025-09-07T00:19:24.318+05:30  INFO 24156 --- [demo] [restartedMain] c.examly.springapp.SurveyAppApplication  : Starting SurveyAppApplication using Java 21.0.7 with PID 24156 (C:\Users\KEERTHI VASAN\Desktop\Advanced-To-Do-App-with-calender-and-remainders\springapp\target\classes started by KEERTHI VASAN in C:\Users\KEERTHI VASAN\Desktop\Advanced-To-Do-App-with-calender-and-remainders\springapp)
+2025-09-07T00:19:24.323+05:30  INFO 24156 --- [demo] [restartedMain] c.examly.springapp.SurveyAppApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-09-07T00:19:24.370+05:30  INFO 24156 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-07T00:19:24.372+05:30  INFO 24156 --- [demo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-07T00:19:25.171+05:30  INFO 24156 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-07T00:19:25.239+05:30  INFO 24156 --- [demo] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2025-09-07T00:19:25.777+05:30  INFO 24156 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-07T00:19:25.794+05:30  INFO 24156 --- [demo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-07T00:19:25.795+05:30  INFO 24156 --- [demo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-07T00:19:25.856+05:30  INFO 24156 --- [demo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-07T00:19:25.856+05:30  INFO 24156 --- [demo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1484 ms
+2025-09-07T00:19:26.023+05:30  INFO 24156 --- [demo] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-07T00:19:26.112+05:30  INFO 24156 --- [demo] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-07T00:19:26.177+05:30  INFO 24156 --- [demo] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-07T00:19:26.517+05:30  INFO 24156 --- [demo] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-07T00:19:26.553+05:30  INFO 24156 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-07T00:19:26.935+05:30  INFO 24156 --- [demo] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5166981
+2025-09-07T00:19:26.937+05:30  INFO 24156 --- [demo] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-07T00:19:27.002+05:30  WARN 24156 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-07T00:19:27.004+05:30  WARN 24156 --- [demo] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-09-07T00:19:27.024+05:30  INFO 24156 --- [demo] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-07T00:19:27.935+05:30  INFO 24156 --- [demo] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-07T00:19:28.044+05:30  INFO 24156 --- [demo] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-07T00:19:28.463+05:30  WARN 24156 --- [demo] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-07T00:19:28.516+05:30  INFO 24156 --- [demo] [restartedMain] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-09-07T00:19:28.919+05:30  INFO 24156 --- [demo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-07T00:19:28.978+05:30  INFO 24156 --- [demo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-07T00:19:29.008+05:30  INFO 24156 --- [demo] [restartedMain] c.examly.springapp.SurveyAppApplication  : Started SurveyAppApplication in 5.229 seconds (process running for 5.678)
+2025-09-07T00:22:52.311+05:30  INFO 24156 --- [demo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-07T00:22:52.313+05:30  INFO 24156 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-07T00:22:52.316+05:30  INFO 24156 --- [demo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-09-07T00:32:14.078+05:30  INFO 24156 --- [demo] [http-nio-8081-exec-8] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 1222 ms
+2025-09-07T00:54:56.945+05:30  WARN 24156 --- [demo] [http-nio-8081-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.examly.springapp.model.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('string')]
