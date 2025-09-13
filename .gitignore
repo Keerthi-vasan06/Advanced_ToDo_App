@@ -1,0 +1,8 @@
+# Ignore Maven build output
+target/
+*.log
+
+# IDE files
+.vscode/
+*.iml
+.idea/

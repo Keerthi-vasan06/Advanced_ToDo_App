@@ -52,14 +52,14 @@
 
 package com.examly.springapp.service;
 
-import com.examly.springapp.model.Reminder;
-import com.examly.springapp.model.Task;
-import com.examly.springapp.repository.ReminderRepository;
-import com.examly.springapp.repository.TaskRepository;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.examly.springapp.model.Reminder;
+import com.examly.springapp.repository.ReminderRepository;
+import com.examly.springapp.repository.TaskRepository;
 
 @Service
 public class ReminderService {
@@ -71,10 +71,12 @@ public class ReminderService {
     private TaskRepository taskRepository;
 
     public Reminder addReminderToTask(Long taskId, Reminder reminder) {
+        System.out.println("Adding reminder " + reminder);      
         return taskRepository.findById(taskId).map(task -> {
             reminder.setTask(task);
+            System.out.println("Reminder after updating task " + reminder);
             return reminderRepository.save(reminder);
-        }).orElseThrow(() -> new RuntimeException("Task not found"));
+        }).orElseThrow(() -> new RuntimeException("Task not found with ID: " + taskId));
     }
 
     public List<Reminder> getRemindersByTaskId(Long taskId) {
@@ -96,6 +98,11 @@ public class ReminderService {
     }
 
     public void deleteReminder(Long reminderId) {
-        reminderRepository.findById(reminderId).ifPresent(reminderRepository::delete);
+        reminderRepository.findById(reminderId).ifPresent(reminder -> {
+        // also update the parent task collection
+        reminder.getTask().getReminders().remove(reminder);
+        reminderRepository.delete(reminder);
+        reminderRepository.flush(); // ensure commit
+        });
     }
 }

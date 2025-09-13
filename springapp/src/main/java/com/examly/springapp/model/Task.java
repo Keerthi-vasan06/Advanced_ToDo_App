@@ -43,7 +43,7 @@ public class Task {
     @JsonBackReference("user-task")
     private User user;
 
-    @OneToMany(mappedBy = "task", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "task", cascade = CascadeType.ALL, orphanRemoval = true , fetch=FetchType.EAGER)
     @JsonManagedReference("task-reminder")
     private List<Reminder> reminders = new ArrayList<>();
 }
