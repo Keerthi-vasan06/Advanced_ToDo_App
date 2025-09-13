@@ -1,4 +1,4 @@
-# Ignore Maven build output
+# Maven build output
 target/
 *.log
 
@@ -6,3 +6,7 @@ target/
 .vscode/
 *.iml
 .idea/
+
+# Node.js dependencies
+reactapp/node_modules/
+reactapp/.cache/
